@@ -1,0 +1,76 @@
+.container {    
+  width: 1152px;
+  height: 700px;
+  min-height: 100vh;
+  background-color:rgb(114, 63, 63);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  width: 468px;
+  height: 200px;
+  display: flex;
+  background-color: orange;
+  margin: 5px;
+  padding:5px;
+  border-radius: 8px;
+}
+
+.first-rectangle {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.second-rectangle {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.second-rectangle .square {
+  height: auto;
+}
+.third-rectangle {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fourth-rectangle {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fourth-rectangle .square:last-child {
+  align-self: flex-end;
+}
+
+.fifth-rectangle {
+  justify-content: center;
+  align-items: stretch;
+}
+.fifth-rectangle .square {
+  height: auto;
+}
+.fifth-rectangle .square:nth-child(2) {
+  height: 100px;
+  align-self: center;
+}
+
+.sixth-rectangle {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sixth-rectangle .square:nth-child(2) {
+  flex-grow: 4;
+}
+
+.square {
+  border-radius: 5px;
+  width: 100px;
+  margin: 15px;
+  height: 100px;
+  background-color:brown;
+}
